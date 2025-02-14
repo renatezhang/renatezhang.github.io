@@ -4,12 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>about me</title>
+  <title>Portfolio Details - Active Bootstrap Template</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -38,7 +38,7 @@
   ======================================================== -->
 </head>
 
-<body class="about-page">
+<body class="portfolio-details-page">
 
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
@@ -51,8 +51,8 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html">portfolio.</a></li>
-          <li><a href="about.html" class="active">about me.</a></li>
+          <li><a href="index.html" class="active">portfolio.</a></li>
+          <li><a href="about.html">about me.</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -60,79 +60,74 @@
     </div>
   </header>
 
-
   <main class="main">
 
-    <!-- About 2 Section -->
-    <section id="about-2" class="about-2 section">
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
 
-      <div class="container">
-        <div class="content">
-          <div class="row justify-content-center">
-            <div class="col-sm-12 col-md-5 col-lg-4 col-xl-4 order-lg-2 offset-xl-1 mb-4">
-              <div class="img-wrap text-center text-md-left" data-aos="fade-up" data-aos-delay="100">
-                <div class="img">
-                  <img src="assets/img/me.jpeg" alt="circle image" class="img-fluid">
-                </div>
-              </div>
+      <div class="container" data-aos="fade-up">
+
+        <div class="portfolio-details-slider swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "navigation": {
+                "nextEl": ".swiper-button-next",
+                "prevEl": ".swiper-button-prev"
+              },
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+
+            <div class="swiper-slide">
+              <img src="assets/img/portfolio/restaurant-cover.png" alt="restaurant cover">
             </div>
 
-            <div class="offset-md-0 offset-lg-1 col-sm-12 col-md-5 col-lg-5 col-xl-4" data-aos="fade-up">
-              <div class="px-3">
-                <span class="content-subtitle"></span>
-                <h2 class="content-title text-start">
-                  about me.
-                </h2>
-                <p class="lead">
-                  Hi, I am Renate Zhang.
-                </p>
-                <p>
-                  I am a Master of Science student of
-                  <a href="https://informatics.tuwien.ac.at/master/media-and-human-centered-computing/" target="_blank"
-                    rel="noopener noreferrer">Media and Human-Centered Compuing </a>
-                  at the
-                  <a href="https://www.tuwien.at/" target="_blank" rel="noopener noreferrer">Technical University of
-                    Vienna </a>
-                  .
-                </p>
-                <p class="mb-3">
-                  My
-                  <a href="./assets/pdf/bachelor_thesis.pdf" download="bachelor_thesis_zhang" target="_blank"
-                    rel="noopener noreferrer">bachelor's thesis </a>
-                  explores the use of different locomotion techniques in virtual reality, such as walking, steering and
-                  teleportation.
-                  Currently I am working on my master's thesis
-                  <a href="https://www.vr.tuwien.ac.at/topics/immersive-real-time-language-translator-for-augmented-reality/"
-                    target="_blank" rel="noopener noreferrer">"Immersive Real-Time Language Translator for Augmented
-                    Reality" </a>
-                  .
-                </p>
-                <p>
-                  <u>Email</u>: 
-                  <a href="mailto: renate.zhang@outlook.com"
-                    target="_blank" rel="noopener noreferrer">renate.zhang@outlook.com</a>
-                </p>
-                <p>
-                  <u>LinkedIn</u>: 
-                  <a href="https://www.linkedin.com/in/renate-zhang/"
-                    target="_blank" rel="noopener noreferrer">Renate Zhang</a>
-                </p>
-                <p>
-                  <u> GitHub</u>: 
-                  <a href="https://github.com/basicasian"
-                    target="_blank" rel="noopener noreferrer">basicasian</a>
-                 </p>
-                <p class="mt-5">
-                  <a href="./assets/pdf/cv_zhang.pdf" download="cv_zhang" target="_blank" rel="noopener noreferrer"
-                    class="btn-get-started">full resume</a>
-                </p>
-              </div>
+            <div class="swiper-slide">
+              <img src="assets/img/portfolio/restaurant-menuoutside.png" alt="restaurant menu outside">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="assets/img/portfolio/restaurant-menuinside.png" alt="restaurant menu inside">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="assets/img/portfolio/restaurant-voucher.png" alt="restaurant voucher">
+            </div>
+
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="row justify-content-between gy-4 mt-4">
+
+          <div class="col-lg-8" data-aos="fade-up">
+            <div class="portfolio-description">
+              <h2>restaurant menu design</h2>
+              <p>
+                Private project for a design of a menu cover, take-away menu and voucher for a traditional chinese restaurant,
+                made using Figma. 
+                The project was completed within 2 weeks. The design is inspired by the traditional chinese culture and
+                the restaurant's interior design. </p>
             </div>
           </div>
         </div>
-      </div>
-    </section><!-- /About 2 Section -->
 
+      </div>
+
+    </section><!-- /Portfolio Details Section -->
 
   </main>
 
