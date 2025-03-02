@@ -1,5 +1,5 @@
 # basicasian.github.io
-The repository for my GitHub pages
+The repository for my GitHub pages: https://basicasian.github.io/
 
 Template Name: Active \
 Template URL: https://bootstrapmade.com/active-bootstrap-website-template/ \
