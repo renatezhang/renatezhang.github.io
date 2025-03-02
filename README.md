@@ -1,13 +1,13 @@
 # Portfolio Website - basicasian.github.io
 
-Welcome to my personal portfolio website! This site serves as a way for potential employers and visitors to get a first impression of my work, explore my projects, and access my resume.
+Welcome to my personal portfolio website! This site serves as a way for potential employers and visitors to get a first impression of my work, explore my projects, and access my resume. \
 You can visit the live portfolio here: [https://basicasian.github.io/](https://basicasian.github.io/)
 
 **Creators:** Renate Zhang  
 
 
 <p align="middle">
-  <img src="assets/img/portfolio" alt="Portfolio" /> 
+  <img src="assets/img/portfolio/GithubPages.png" alt="Portfolio" /> 
 </p>
 
 ## Features
