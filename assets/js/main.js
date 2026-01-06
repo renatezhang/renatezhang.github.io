@@ -8,6 +8,25 @@
 
 (function() {
   "use strict";
+  
+  /**
+   * Load shared footer
+   */
+  document.addEventListener("DOMContentLoaded", () => {
+    const footerPlaceholder = document.getElementById("footer-placeholder");
+    if (!footerPlaceholder) return;
+
+    fetch("/components/footer.html")
+      .then(res => {
+        if (!res.ok) throw new Error("footer not found");
+        return res.text();
+      })
+      .then(html => {
+        footerPlaceholder.innerHTML = html;
+      })
+      .catch(err => console.error(err));
+  });
+
 
   /**
    * Apply .scrolled class to the body as the page is scrolled down
